@@ -66,7 +66,7 @@ ui <- dashboardPage(
                 shiny::HTML("<br><br><center> <h1>Package Info</h1> </center><br>"),
                 shiny::HTML("<h5>
                             This is  a graphical shiny application for the package optimLanduse to get a quick idea of the functionalities of the package. 
-                            optimLanduse (version 1.0.0) has been released on CRAN and can be accessed via the  
+                            optimLanduse (version 1.1.0) has been released on CRAN and can be accessed via the  
                             <a href='https://github.com/Forest-Economics-Goettingen/optimLanduse'>project page</a>."),
                 shiny::HTML("<br><br><center> <h3>Short summary</h3> </center><br>"),
                 shiny::HTML("<h5><right><li> 
