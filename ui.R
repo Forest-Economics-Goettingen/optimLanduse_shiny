@@ -10,13 +10,13 @@ library(optimLanduse)
 library(ggsci)
 #library(DT)
 
-ui <- dashboardPage(
+ui <- dashboardPage(title = "optimLanduse",
   dashboardHeader(title = 
                     shinyDashboardLogo(
                       theme = "blue_gradient",
                       boldText = "optimLanduse",
                       mainText = "",
-                      badgeText = "v1.0"
+                      badgeText = "v1.1.0"
                     ),
                   tags$li(class = "dropdown",
                           tags$a(href="https://www.uni-goettingen.de/de/586895.html", target="_blank", 
