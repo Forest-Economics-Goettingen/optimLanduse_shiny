@@ -156,7 +156,7 @@ ui <- dashboardPage(
                         tags$a(href="https://www.uni-goettingen.de/en/310995.html", target="_blank", 
                                tags$img(src="Logos_1.png", height = "70px", width = "500px"))),
                 shiny::HTML("<br><br> <h3>Data and Code</h3> <br>"),
-                shiny::HTML(" <h5>optimLanduse (version 1.0.0) has been released on CRAN
+                shiny::HTML(" <h5>optimLanduse (version 1.1.0) has been released on CRAN
                             and can be accessed via the project page 
                             <a href='https://github.com/Forest-Economics-Goettingen/optimLanduse'>
                             https://github.com/Forest-Economics-Goettingen/optimLanduse</a></h5>"), width  = 12
