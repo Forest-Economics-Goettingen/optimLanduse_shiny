@@ -117,9 +117,9 @@ output$downloadPlot <- downloadHandler(
   })
 
 output$downloadData <- downloadHandler(
-  filename = function(){"C12_Portfolio.csv"}, 
+  filename = function(){"Optimized_Portfolio.xlsx"}, 
   content = function(fname){
-    write.csv2(ownResultData() %>% 
+    write.xlsx(ownResultData() %>% 
                  spread(key = "land-use option", value = "land-use share"), fname)
   }
 )
