@@ -92,7 +92,7 @@ output$plot1 <- renderPlot({
   
   print(gg)
   
-})
+}, height = 500, width = 700)
 
 
 

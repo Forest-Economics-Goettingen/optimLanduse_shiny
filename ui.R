@@ -112,7 +112,7 @@ ui <- dashboardPage(title = "optimLanduse",
                 downloadButton('downloadExample','Download Example'), width = 3
               ),
               box(
-                tableOutput("contents"), width = 9
+                tableOutput("contents"), width = 9, align="center"
               )
       ),
       tabItem("model",
@@ -123,13 +123,13 @@ ui <- dashboardPage(title = "optimLanduse",
                   h5("Info: Please use the following Options only if you are sure what they do. Values are limited to <= 10!"),
                   checkboxInput("fixDistance", label = "Enable fixDistance function", value = TRUE),
                   numericInput("fixDistanceNum", label = "fix Distance Value", value = 3, max = 10),
-                  numericInput("maxuvalue", label = "Maximum uncertainty level", value = 3, max = 10), width = 4, 
+                  numericInput("maxuvalue", label = "Maximum uncertainty level", value = 3, max = 10), width = 3, height = 560 
                 ),
-                box(plotOutput("plot1", height = 560), width = 6),
-                box(tableOutput("ownResult"), width = 4),
+                box(plotOutput("plot1"), width = 9, height = 560, align="center"),
                 box(                            
                   downloadButton('downloadPlot','Download Plot'),
-                  downloadButton('downloadData','Download Data'), width = 4)
+                  downloadButton('downloadData','Download Data'), width = 3, align="center"),
+                box(tableOutput("ownResult"), width = 9, align="center"),
               )
       ),
       tabItem("about",
