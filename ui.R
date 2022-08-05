@@ -8,7 +8,8 @@ library(dplyr)
 library(ggplot2)
 library(optimLanduse)
 library(ggsci)
-#library(DT)
+library(openxlsx)
+
 
 ui <- dashboardPage(title = "optimLanduse",
   dashboardHeader(title = 
@@ -105,9 +106,10 @@ ui <- dashboardPage(title = "optimLanduse",
       tabItem("data",
               box(
                 fileInput("file1", "Choose xlsx file", accept = ".xlsx"),
+                h5(" A data example is preloaded."),
                 h5("The file used for upload must be of type xlsx. This file must also correspond to a certain structure 
-                                 for further processing. A data example is preloaded. You can find the example data named exampleGosling.xlsx by clicking the following link:"),
-                tags$a(h5("Example Data Gosling et al. (2020)"), href = "https://github.com/Forest-Economics-Goettingen/optimLanduse_shiny"), width = 3
+                                 for further processing. You can download the example data named exampleGosling.xlsx by clicking the following button:"),
+                downloadButton('downloadExample','Download Example'), width = 3
               ),
               box(
                 tableOutput("contents"), width = 9

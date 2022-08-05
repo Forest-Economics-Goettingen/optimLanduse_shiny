@@ -99,6 +99,14 @@ output$plot1 <- renderPlot({
 output$ownResult <- renderTable(ownResultData() %>% 
                                   spread(key = "land-use option", value = "land-use share"))
 
+
+output$downloadExample <- downloadHandler(
+  filename = function(){"exampleGosling.xlsx"}, 
+  content = function(file){
+    write.xlsx(read_excel(exampleData("exampleGosling.xlsx")), file)
+  }
+)
+
 output$downloadPlot <- downloadHandler(
   filename = function(){paste(input$Indicator, '.pdf', sep = '')},
   
@@ -107,6 +115,7 @@ output$downloadPlot <- downloadHandler(
     print(vals$gg)
     dev.off()
   })
+
 output$downloadData <- downloadHandler(
   filename = function(){"C12_Portfolio.csv"}, 
   content = function(fname){
