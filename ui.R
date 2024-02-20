@@ -17,11 +17,11 @@ ui <- dashboardPage(title = "optimLanduse",
                       theme = "blue_gradient",
                       boldText = "optimLanduse",
                       mainText = "",
-                      badgeText = "v1.1.0"
+                      badgeText = "v1.2.0"
                     ),
                   tags$li(class = "dropdown",
                           tags$a(href="https://www.uni-goettingen.de/de/586895.html", target="_blank", 
-                                 tags$img(src="Logo_Felap_Goe_transparant.png", height = "45px", width = "250px"))),
+                                 tags$img(src="Logo-GA-2024.png", height = "45px", width = "100px"))),
                   tags$li(class = "dropdown",
                           tags$a(href="", target="_blank", 
                                  tags$img(src="2015_Logo_TUM_RGB_transparant.png", height = "45px", width = "80px")))
@@ -67,7 +67,7 @@ ui <- dashboardPage(title = "optimLanduse",
                 shiny::HTML("<br><br><center> <h1>Package Info</h1> </center><br>"),
                 shiny::HTML("<h5>
                             This is  a graphical shiny application for the package optimLanduse to get a quick idea of the functionalities of the package. 
-                            optimLanduse (version 1.1.0) has been released on CRAN and can be accessed via the  
+                            optimLanduse (version 1.2.0) has been released on CRAN and can be accessed via the  
                             <a href='https://github.com/Forest-Economics-Goettingen/optimLanduse'>project page</a>."),
                 shiny::HTML("<br><br><center> <h3>Short summary</h3> </center><br>"),
                 shiny::HTML("<h5><right><li> 
@@ -144,13 +144,15 @@ ui <- dashboardPage(title = "optimLanduse",
                             Carola Paul<sup>[1]</sup>, 
                             Thomas Knoke<sup>[2]</sup></h5>"),
                 shiny::HTML("<h5><u>Dashboard:</h5></u>"),
-                shiny::HTML("<h5>Volker von Gross<sup>[1]</sup>"),
+                shiny::HTML("<h5>
+                            Volker von Gross<sup>[1]</sup>, 
+                            Carola Paul<sup>[1]</sup>"),
                 shiny::HTML("<br><br>
                             <sup>[1]</sup>Department of Forest Economics and Sustainable Land-use Planning, Georg-August University Goettingen <br>
                             <sup>[2]</sup>Institute of Forest Management, TUM School of Life Sciences Weihenstephan, Department of Life Science Systems, Technical University of Munich"),
                 shiny::HTML("<br><br> <h3>Contact</h3>"),
                 shiny::HTML("<h5>Mail: volker.vongross@uni-goettingen.de <br><br>
-                            GitHub: <a href='https://github.com/gross47'>https://github.com/gross47</a> </h5>"),
+                            GitHub: <a href='https://github.com/Forest-Economics-Goettingen/optimLanduse_shiny'>https://github.com/Forest-Economics-Goettingen/optimLanduse_shiny</a> </h5>"),
                 shiny::HTML("<br><br> <h3>Acknowledgments</h3> <br>"),
                 shiny::HTML("<h5>V. v. G. was funded by the Deutsche Forschungsgemeinschaft (DFG, German Research Foundation) <br>
                             Project number 192626868 – SFB 990 in the framework of the collaborative German – Indonesian research project CRC 990.</h5>"),
@@ -158,7 +160,7 @@ ui <- dashboardPage(title = "optimLanduse",
                         tags$a(href="https://www.uni-goettingen.de/en/310995.html", target="_blank", 
                                tags$img(src="Logos_1.png", height = "70px", width = "500px"))),
                 shiny::HTML("<br><br> <h3>Data and Code</h3> <br>"),
-                shiny::HTML(" <h5>optimLanduse (version 1.1.0) has been released on CRAN
+                shiny::HTML(" <h5>optimLanduse (version 1.2.0) has been released on CRAN
                             and can be accessed via the project page 
                             <a href='https://github.com/Forest-Economics-Goettingen/optimLanduse'>
                             https://github.com/Forest-Economics-Goettingen/optimLanduse</a></h5>"), width  = 12
